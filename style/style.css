@@ -20,10 +20,6 @@ img {
     max-height: 100%;
 }
 
-.front_img{
-  position: relative;
-}
-
 h1, h2, h3, h4, h5, h6
 { font: normal 175% 'century gothic', arial, sans-serif;
   color: #FFF;
@@ -108,7 +104,9 @@ ol li
   height: 100px;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-  width: 100%; }
+  width: 100%;
+  z-index: 100;
+}
 
 #logo_img
 { display: block;
@@ -207,27 +205,12 @@ ul#menu li a.selected,
 }
 
 #content_1
-{ text-align: left;
+{
+  text-align: left;
   float: left;
   width: 100%;
   padding: 0;}
 
-#content_1 ul
-{ margin: 2px 0 22px 0px;}
-
-#content_1 ul li
-{ list-style-type: none;
-  background: url(bullet.png) no-repeat;
-  margin: 0 0 6px 0;
-  padding: 0 0 4px 25px;
-  line-height: 1.5em;}
-
-#content_1 p
-{
-  color: #423a5d;
-  font-size: 20px;
-  font-family: 'Work Sans', sans-serif,;
-}
 
 #content_1 img
 {
@@ -236,45 +219,201 @@ ul#menu li a.selected,
  position:absolute;
 }
 
-#content_1_overlay_text_1{
+#content_des
+{
+  text-align: left;
+  float: left;
+  width: 100%;
+  padding: 0;
+  align-content: center;
+}
+
+#content_des img
+{
+ max-width: 100%
+ max-height: 100%
+ position:absolute;
+}
+
+#content_des h1
+{
+  color: rgb(252, 212, 0);
+  font-size: 35px;
+  font-family: 'Work Sans';
+  font-weight: 400;
+  text-align: center;
+}
+
+#content_des h2
+{
+  color: rgb(252, 212, 0);
+  font-size: 25px;
+  font-family: 'Work Sans';
+  font-weight: 400;
+  text-align: center;
+}
+
+ul#des_menu, ul#des_menu li
+{
+  margin: 0px auto;
+  padding: 0;
+}
+
+#menu_wrapper{
+  text-align: center;
+}
+
+ul#des_menu{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 160px 0px 160px;
+  zoom:1;
+  display: inline-block;
+}
+
+ul#des_menu li
+{ list-style: none;
+  margin: 0px auto;
+  float: left;
+}
+
+ul#des_menu li a
+{ letter-spacing: 0.1em;
+  font: normal 100% helvetica, sans-serif;
+  font-size: 14px;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding: 0px 65px 20px 65px;
+  text-align: center;
+  color: #ffbf00;
+  text-decoration: none;
+  background: transparent;
+}
+
+.photobar{
+  position: inherit;
+  float: left;
+  position: relative;
+  width: 100%;
+  height: 550px;
+  display: flex; justify-content: space-between;
+}
+
+.photobar span{
+  position: relative;
+  width: 20%;
+  padding: 20px 15px 0 15px;
+  text-align: center;
+  background-color: rgba(15, 10, 50, 0.81);
+}
+
+.photobar img{
+  max-width: 80%;
+  border: 5px solid #ddd;
+}
+
+.photobar p{
+  color: rgb(219, 207, 222);
+  font-size: 14px;
+  font-family: 'Work Sans';
+  font-weight: 400;
+}
+
+
+.front_img{
+  position: inherit;
+}
+
+.front_img img
+{
+ max-width: 100%
+ max-height: 100%
+}
+
+#image_container{
+  position: inherit;
+}
+.content_1_overlay_container{
+  position: relative;
+  width: 45%;
+  top: 175px;
+  text-align: center;
+}
+.content_1_overlay_text_1{
   position: absolute;
-  top: 37.5%;
-  left: 6%;
   width: 100%;
   color: rgb(44, 23, 61);
   font-size: 40px;
   font-family: 'Work Sans';
   font-weight: 900;
+  z-index: 51;
+
 }
 
-#content_1_overlay_text_2{
+.content_1_overlay_text_2{
   position: absolute;
-  top: 47%;
-  left: 8%;
+
   width: 100%;
   color: rgb(44, 23, 61);
+  top: 60px;
   font-size: 33px;
   font-family: 'Amiri';
   font-style: italic;
 }
 
+#premise_container{
+  float: left;
+  width: 100%;
+  height: 500px;
+  padding-top: 40px;
+}
+
+#half_1{
+  height:0%
+  width: 100%;
+  text-align: center;
+}
+
+#half_1 p{
+  color: rgb(252, 212, 0);
+  font-size: 35px;
+  font-family: 'Work Sans';
+  font-weight: 400;
+}
+
+#half_2{
+  height:0%;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#half_2 p{
+  color: rgb(219, 207, 222);
+
+  font-size: 16px;
+  font-family: 'Work Sans';
+  font-weight: 400;
+}
+
 #footer
-{ width: 898px;
-  font: normal 100% 'lucida sans unicode', sans-serif;
+{ width: 80%;
+  font: normal 100% 'Work Sans', sans-serif;
   height: 33px;
-  padding: 24px 0 5px 0;
+  padding: 20px 24px 0 20px;
+
   text-align: center;
   background: transparent url(transparent_light.png) repeat;
-  color: #FFF;
-  text-transform: uppercase;
+  color: #4a195e;
   letter-spacing: 0.1em;}
 
 #footer a
-{ color: #FFF;
+{ color: #4a195e;
   text-decoration: none;}
 
 #footer a:hover
-{ color: #FFF;
+{ color: #d52424;
   text-decoration: underline;}
 
 .search
