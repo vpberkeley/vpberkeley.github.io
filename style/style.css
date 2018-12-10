@@ -21,13 +21,13 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6
-{ font: normal 175% 'century gothic', arial, sans-serif;
+{ font: normal 175% 'Work Sans', sans-serif;
   color: #FFF;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;}
 
 h2
-{ font: normal 175% 'century gothic', arial, sans-serif;
+{ font: normal 175% 'Work Sans', sans-serif;
   color: #FFF;}
 
 h4, h5, h6
@@ -233,9 +233,9 @@ ul#menu li a.selected,
 
 #content_des img
 {
- max-width: 100%
- max-height: 100%
+ max-width: 50%
  position:absolute;
+ padding-right: 10px;
 }
 
 #content_des h1
@@ -295,6 +295,17 @@ ul#des_menu li a
   color: #ffbf00;
   text-decoration: none;
   background: transparent;
+}
+
+ul#des_menu li:hover a{
+  color:#ed8531;
+}
+
+#content_des a{
+  font: normal 100% "Work Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(219, 207, 222);
 }
 
 .photobar{
