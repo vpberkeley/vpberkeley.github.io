@@ -328,6 +328,7 @@ ul#des_menu li:hover a{
 .photobar img{
   max-width: 80%;
   border: 5px solid #ddd;
+  padding: 0 0 0 0 !important;
 }
 
 .photobar p{
